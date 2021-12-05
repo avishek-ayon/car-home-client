@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Nav, NavDropdown, Badge } from 'react-bootstrap';
+import { Container, Nav, NavDropdown } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../Components/hooks/useAuth';
 
@@ -34,7 +33,7 @@ const Header = () => {
                         className="hoverStyle text-decoration-none sm-mb-3"
                         to="/home"
                     >
-                        <Navbar.Brand className="text-white" href="#home">Car Home</Navbar.Brand>
+                        <Navbar.Brand className="text-white fw-bold fs-1 text-success" href="#home">Car Home</Navbar.Brand>
                     </NavLink>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

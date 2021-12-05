@@ -29,7 +29,7 @@ const AddReview = () => {
         const newReview = { name, img, description, rating, newDate, productName }
 
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://tranquil-sea-34638.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -106,7 +106,7 @@ const AddReview = () => {
                         sx={{ width: '90%', m: 1, input: { color: '#fff' } }}
                         id="outlined-size-small"
                         inputRef={ratingRef}
-                        label="description"
+                        label="Rating"
                         variant="standard"
                         className='input-field'
                         InputLabelProps={{

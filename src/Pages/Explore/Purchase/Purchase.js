@@ -29,7 +29,7 @@ const Purchase = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/products/${productId}`
+        const url = `https://tranquil-sea-34638.herokuapp.com/products/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -49,7 +49,7 @@ const Purchase = () => {
         }
         console.log(purchaseProduct);
         // send to the server
-        fetch('http://localhost:5000/orders', {
+        fetch('https://tranquil-sea-34638.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
